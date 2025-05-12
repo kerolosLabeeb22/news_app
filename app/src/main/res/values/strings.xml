@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">news app 2</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="news_app_logo">news app logo</string>
+    <string name="news_app_signature">news app signature</string>
+    <string name="search_icon">search icon</string>
+    <string name="by">By</string>
+</resources>
