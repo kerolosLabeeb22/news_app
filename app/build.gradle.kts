@@ -53,6 +53,14 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
+
+
+    // ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    // ViewModel utilities for Compose
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    // Lifecycle utilities for Compose
+    implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
     implementation(libs.androidx.core.ktx)
