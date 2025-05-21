@@ -8,11 +8,14 @@ import retrofit2.http.Query
 
 interface NewsService {
     @GET("top-headlines/sources")
-    fun getResource(@Query("apiKey") apikey:String ="a7121b602b324625987412c439a51923") : Call<SourcesResponse>
+    fun getResource(
+        @Query("category") category: String,
+        @Query("apiKey") apikey: String = "a7121b602b324625987412c439a51923"
+    ): Call<SourcesResponse>
 
     @GET("everything")
     fun getNewsBySources(
-        @Query("sources") sources : String,
-        @Query("apiKey") apikey:String ="a7121b602b324625987412c439a51923"
-    ) : Call<NewsResponse>
+        @Query("sources") sources: String,
+        @Query("apiKey") apikey: String = "a7121b602b324625987412c439a51923"
+    ): Call<NewsResponse>
 }

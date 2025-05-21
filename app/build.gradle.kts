@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    kotlin("plugin.serialization") version "2.1.21"
 
 }
 
@@ -45,6 +46,13 @@ dependencies {
     implementation (libs.retrofit)
     implementation (libs.converter.gson)
     implementation(libs.logging.interceptor)
+    implementation(libs.androidx.recyclerview)
+    val nav_version = "2.9.0"
+
+    // Jetpack Compose integration
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
     implementation(libs.androidx.core.ktx)
