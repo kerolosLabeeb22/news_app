@@ -1,4 +1,4 @@
-package com.example.newsapp2.api.model
+package com.example.data.api.model
 
 import com.google.gson.annotations.SerializedName
 
@@ -29,7 +29,7 @@ data class SourcesItem(
 data class SourcesResponse(
 
     @field:SerializedName("sources")
-    val sources: List<SourcesItem?>? = null,
+    val sources: List<SourcesItem>? = null,
 
     @field:SerializedName("status")
     val status: String? = null,

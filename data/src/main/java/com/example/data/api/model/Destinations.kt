@@ -1,8 +1,9 @@
-package com.example.newsapp2.api
+package com.example.data.api.model
 
 import kotlinx.serialization.Serializable
 
 @Serializable
 object CategoriesScreen
+
 @Serializable
 class NewsScreen2(val categoryApiId: String)
