@@ -13,16 +13,17 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import com.example.newsapp2.api.CategoriesScreen
-import com.example.newsapp2.api.NewsScreen2
 import com.example.newsapp2.categories.CategoriesScreen
 import com.example.newsapp2.news.NewsToolbar
 import com.example.newsapp2.ui.theme.NewsApp2Theme
 import com.example.newsapp2.ui.theme.black
 import androidx.compose.ui.Modifier
+import com.example.data.api.model.CategoriesScreen
+import com.example.data.api.model.NewsScreen2
 import com.example.newsapp2.news.NewsScreen
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

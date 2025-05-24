@@ -1,7 +1,6 @@
 package com.example.newsapp2.news
 
 
-import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -18,7 +17,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
+
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -44,28 +43,26 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil3.compose.AsyncImage
+import com.example.data.api.model.ArticlesItem
+import com.example.data.api.model.SourcesItem
+import com.example.domain.entity.ArticlesItemEntity
+import com.example.domain.entity.SourcesItemEntity
 import com.example.newsapp2.NewsScreenContent
 import com.example.newsapp2.R
-import com.example.newsapp2.api.model.ApiManager
-import com.example.newsapp2.api.model.ArticlesItem
-import com.example.newsapp2.api.model.NewsResponse
-import com.example.newsapp2.api.model.SourcesItem
-import com.example.newsapp2.api.model.SourcesResponse
+
+
+
 import com.example.newsapp2.ui.theme.black
 import com.example.newsapp2.ui.theme.gray
 import com.example.newsapp2.ui.theme.white
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 
 @Composable
 fun NewsScreen(
-    categoryAPIKEY: String,
-    viewModel: NewsViewModel = viewModel(),
-    modifier: Modifier = Modifier
+    categoryAPIKEY: String, viewModel: NewsViewModel = hiltViewModel(), modifier: Modifier = Modifier
 ) {
 
     val sourcesList = viewModel.sourcesList
@@ -79,15 +76,13 @@ fun NewsScreen(
         viewModel.getNewsByResource()
     }
     Column(
-        modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally
+        modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        if (sourcesList.isNotEmpty())
-            SourceTabsLazyRow(sources = sourcesList) { sourceId ->
-                articlesList.clear()
-                viewModel.selectedSourceId.value = sourceId
+        if (sourcesList.isNotEmpty()) SourceTabsLazyRow(sources = sourcesList) { sourceId ->
+            articlesList.clear()
+            viewModel.selectedSourceId.value = sourceId
 
-            }
+        }
         NewsList(articlesList)
 
         if (viewModel.isLoading.value) {
@@ -111,15 +106,13 @@ fun NewsScreen(
 @Composable
 fun ErrorDialog(modifier: Modifier = Modifier, viewmodel: NewsViewModel) {
     AlertDialog(
-        onDismissRequest = { viewmodel.errorState.value = "" },
-        confirmButton = {
+        onDismissRequest = { viewmodel.errorState.value = "" }, confirmButton = {
             TextButton(onClick = { viewmodel.errorState.value = "" }) {
                 Text(text = stringResource(R.string.ok))
             }
         }, title = {
             Text(text = viewmodel.errorState.value, color = black, fontSize = 20.sp)
-        }
-        , containerColor = white
+        }, containerColor = white
     )
 }
 
@@ -131,7 +124,7 @@ private fun ErrorDialogPrev() {
 
 @Composable
 fun SourceTabsLazyRow(
-    sources: List<SourcesItem>,
+    sources: List<SourcesItemEntity>,
     modifier: Modifier = Modifier,
     onTabSelected: (sourceId: String) -> Unit,
 
@@ -165,8 +158,7 @@ fun SourceTabsLazyRow(
                 onClick = {
                     onTabSelected(sourceitem.id ?: "")
                     selectedIndex.intValue = index
-                }
-            ) {
+                }) {
                 Text(
                     text = sourceitem.name ?: "",
                     color = white,
@@ -183,9 +175,9 @@ fun SourceTabsLazyRow(
 private fun SourcesTabLazyRowPrev() {
     SourceTabsLazyRow(
         listOf(
-            SourcesItem(name = "ABC News"),
-            SourcesItem(name = "Al Jazeera News"),
-            SourcesItem(name = "CBC News")
+            SourcesItemEntity(name = "ABC News"),
+            SourcesItemEntity(name = "Al Jazeera News"),
+            SourcesItemEntity(name = "CBC News")
         )
     ) {
 
@@ -208,18 +200,17 @@ fun NewsToolbar(title: String, modifier: Modifier = Modifier) {
         ),
         navigationIcon = {
             Image(
-                painter = painterResource(id = R.drawable.ic_menu),
-                contentDescription = "menu icon"
+                painter = painterResource(id = R.drawable.ic_menu), contentDescription = "menu icon"
             )
-        }, actions = {
+        },
+        actions = {
             Image(
                 painter = painterResource(id = R.drawable.search_ic),
                 contentDescription = stringResource(
                     R.string.search_icon
                 )
             )
-        }
-    )
+        })
 }
 
 @Preview(showSystemUi = true)
@@ -230,7 +221,7 @@ private fun NewsScreenPrev() {
 }
 
 @Composable
-fun NewsList(articlesList: List<ArticlesItem>, modifier: Modifier = Modifier) {
+fun NewsList(articlesList: List<ArticlesItemEntity>, modifier: Modifier = Modifier) {
     LazyColumn {
         items(articlesList) {
             NewsCard(articlesItem = it)
@@ -239,7 +230,7 @@ fun NewsList(articlesList: List<ArticlesItem>, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun NewsCard(articlesItem: ArticlesItem, modifier: Modifier = Modifier) {
+fun NewsCard(articlesItem: ArticlesItemEntity, modifier: Modifier = Modifier) {
     Card(
         modifier = Modifier
             .padding(vertical = 4.dp)
@@ -247,8 +238,7 @@ fun NewsCard(articlesItem: ArticlesItem, modifier: Modifier = Modifier) {
             .border(1.dp, white, RoundedCornerShape(12.dp))
             .padding(8.dp),
         colors = CardDefaults.cardColors(
-            containerColor = Color.Transparent,
-            contentColor = white
+            containerColor = Color.Transparent, contentColor = white
         )
 
     ) {
@@ -298,7 +288,7 @@ fun NewsCard(articlesItem: ArticlesItem, modifier: Modifier = Modifier) {
 @Composable
 private fun NewsCardPrev() {
     NewsCard(
-        ArticlesItem(
+        ArticlesItemEntity(
             title = "40-year-old man falls 200 feet to his death while canyoneering at national park",
             author = "Jon Haworth"
         )
