@@ -51,7 +51,6 @@ Lets users customize preferences like language, dark mode, notifications, and mo
  
 </h3>
 <p align= "center">
-    <a href="https://www.youtube.com/watch?v=eRK9pI98EUk&list=PLYfTCw9blWRNh4jiQO3kVNd34jUD6MD9m&index=1&t=4s&pp=gAQBiAQB">
      <kbd>
         <img  src="https://github.com/user-attachments/assets/7d287998-8a3c-417d-9801-580477fc8e7b" alt="Get this app on YouTube Playlist Tutorials">
      </kbd>
@@ -60,53 +59,43 @@ Lets users customize preferences like language, dark mode, notifications, and mo
 
 ## 📁 File Structure
 
-![image](https://github.com/AmmarAgeeza/news_app/assets/72443818/6bf5b32f-abb6-4a88-b96c-e67133dc7618)
+![Image](https://github.com/user-attachments/assets/fd07cf0a-1ba7-4c65-88b6-2c900ffa62a7)
 
-## 📱 UI
-
-![2](https://github.com/AmmarAgeeza/news_app/assets/72443818/bd589d06-bb71-4010-9899-709ead2d9545)
-
-![3](https://github.com/AmmarAgeeza/news_app/assets/72443818/a0583e2a-5a9e-4852-ac85-1bd9ec0d312b)
 
 ## 🎥 Video
 
-https://github.com/AmmarAgeeza/news_app/assets/72443818/47054951-596b-4fe5-9eff-03abf357f8fe
 
-## 🛠 Dependencies
+https://github.com/user-attachments/assets/a9821c52-125c-4bfe-b5fa-6a4b9ebd5173
 
-```pubspec.yaml
-  date_picker_timeline: 
-  flutter_bloc: 
-  flutter_screenutil: 
-  fluttertoast: 
-  get_it: 
-  google_fonts: 
-  intl: 
-  shared_preferences: 
-  smooth_page_indicator: 
-  sqflite: 
-  flutter_local_notifications: 
-  timezone: 
-  flutter_timezone: 
-  workmanager: 
-```
+
+
 
 ## ☢️ Usage
 
-1. **Clone the repository**
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/your-repo.gi
+   ```
+2. **Open the Project**
+Open the project using **Android Studio** or any IDE that supports Kotlin and Android development.
 
-2. **Open the project in your preferred Flutter IDE.**
+3. **Explore the Codebase:**
 
-3. **Explore the `lib` directory:**
+  - Navigate to the app/src/main/java/ directory to understand the app's structure.
 
-    - Review the project structure to understand the core of the app.
-    - Customize the app of your need.
+  - Check out packages like ui, viewmodel, and data if you're using MVVM or Clean Architecture.
 
-4. **Run the app on an emulator or physical device:**
+  - Customize the app according to your needs.
 
-    ```bash
-    flutter run
-    ```
+4. **Run the App:**
+
+   - Choose an emulator or connect a physical Android device.
+
+   - Click **Run** in Android Studio, or use the terminal:
+     ```bash
+     ./gradlew installDebug
+     ```
+
 
 ## 🚨 Contributing
 
