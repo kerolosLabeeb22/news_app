@@ -47,11 +47,12 @@ Enables users to search for news by keywords or topics, with real-time results.
 Lets users customize preferences like language, dark mode, notifications, and more.
 
 <hr>
+![News_app_mockup](https://github.com/user-attachments/assets/bf81be95-2f51-49be-a79f-f11979a0217e)
 
-## 📱 UI
+## app mockup 
 <p align= "center">
      <kbd>
-        <img  src="https://github.com/user-attachments/assets/7d287998-8a3c-417d-9801-580477fc8e7b" alt="Get this app on YouTube Playlist Tutorials">
+        <img  src="https://github.com/user-attachments/assets/bf81be95-2f51-49be-a79f-f11979a0217e" alt="Get this app on YouTube Playlist Tutorials">
      </kbd>
   </a>
 
@@ -60,7 +61,15 @@ Lets users customize preferences like language, dark mode, notifications, and mo
 
 ![Image](https://github.com/user-attachments/assets/fd07cf0a-1ba7-4c65-88b6-2c900ffa62a7)
 
+## 📱 UI
 
+
+<p align= "center">
+     <kbd>
+        <img  src="https://github.com/user-attachments/assets/3893ca4e-1605-4b21-b42a-0853290443ed" alt="Get this app on YouTube Playlist Tutorials">
+     </kbd>
+  </a>
+  
 ## 🎥 Video
 
 
