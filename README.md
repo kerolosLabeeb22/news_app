@@ -10,41 +10,50 @@
   <a href="mailto:kerolos.labib.dev@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
   </a>
-    <a href="https://youtube.com/@ammarageeza91?si=bHNizIHn9dIL3jX7">
-    <img src="https://img.shields.io/badge/Youtube-red?style=for-the-badge&logo=youtube&logoColor=white" />
-  </a>
-     <a href="https://mostaql.com/u/ammarageeza/portfolio">
-    <img src="https://img.shields.io/badge/Portfolio-0077B5?style=for-the-badge&logoColor=white" />
-  </a>
-     </a>
-     <a href="https://t.me/ammarageeza">
-    <img src="https://img.shields.io/badge/Telegram-0077B5?style=for-the-badge&logo=telegram&logoColor=white" />
-  </a>
+
 </div>
 
 ## 🚀 Getting Started
 
-- Up-To-Do App is designed to help users organize their tasks efficiently and stay productive throughout their day. Whether it's managing daily tasks, work assignments, or personal goals.
-- App notifies the user of the task before starting using `flutter_local_notifications`.
-- Our App reminds users every day at 9 PM ⏰to write tasks for tomorrow.
+- **Launch the App**
+  Open the app and explore the latest headlines instantly — no sign-up required.
+
+- **Choose Your Interests**
+  Select your favorite news categories — Politics, Sports, Tech, Entertainment, and more.
+
+- **Stay Updated**
+  Enjoy real-time news updates tailored to your preferences, anytime and anywhere.
+
+
 
 ## 🤳 Screens
 
-- **Splash Screen:** Wait for 3 seconds then navigate to `On-Boarding Screens`. 
-- **On-Boarding Screens:** Provide a seamless and engaging introduction to our app.
-- **Home Screen:** The User can discover all tasks that he added before and can change the status to `COMPLETED` or `DELETED`.
-- **Add Task:** User can add task details like `title`, `note`, `date`, `start time`, and `end time`.
+- **Splash Screen:**
+Displays the app logo briefly (e.g. 3 seconds) before navigating to the onboarding or home screen.
+
+- **Category Screen:**
+Allows users to select their preferred news categories such as Politics, Sports, Technology, and more.
+
+- **News Screen (Home):**
+Shows a curated list of top headlines and breaking news based on the selected categories.
+
+- **Articles Screen:**
+Displays full article content with images, titles, publication date, and author (if available).
+
+- **Search Screen:**
+Enables users to search for news by keywords or topics, with real-time results.
+
+- **Settings Screen:**
+Lets users customize preferences like language, dark mode, notifications, and more.
 
 <hr>
 <h3>
-  <a href="https://www.youtube.com/watch?v=eRK9pI98EUk&list=PLYfTCw9blWRNh4jiQO3kVNd34jUD6MD9m&index=1&t=4s&pp=gAQBiAQB">
-    👨🏻‍🎓 Get this app on YouTube Playlist Tutorials
-  </a>
+ 
 </h3>
 <p align= "center">
     <a href="https://www.youtube.com/watch?v=eRK9pI98EUk&list=PLYfTCw9blWRNh4jiQO3kVNd34jUD6MD9m&index=1&t=4s&pp=gAQBiAQB">
      <kbd>
-        <img  src="https://github.com/AmmarAgeeza/news_app/assets/72443818/0f267f9e-d2a3-41c6-8a4b-17a0b12abd6d" alt="Get this app on YouTube Playlist Tutorials">
+        <img  src="https://github.com/user-attachments/assets/7d287998-8a3c-417d-9801-580477fc8e7b" alt="Get this app on YouTube Playlist Tutorials">
      </kbd>
   </a>
 
