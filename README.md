@@ -47,9 +47,8 @@ Enables users to search for news by keywords or topics, with real-time results.
 Lets users customize preferences like language, dark mode, notifications, and more.
 
 <hr>
-<h3>
- 
-</h3>
+
+## 📱 UI
 <p align= "center">
      <kbd>
         <img  src="https://github.com/user-attachments/assets/7d287998-8a3c-417d-9801-580477fc8e7b" alt="Get this app on YouTube Playlist Tutorials">
