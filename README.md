@@ -47,7 +47,7 @@ Enables users to search for news by keywords or topics, with real-time results.
 Lets users customize preferences like language, dark mode, notifications, and more.
 
 <hr>
-![News_app_mockup](https://github.com/user-attachments/assets/bf81be95-2f51-49be-a79f-f11979a0217e)
+
 
 ## app mockup 
 <p align= "center">
