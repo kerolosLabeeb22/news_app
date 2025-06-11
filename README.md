@@ -74,7 +74,7 @@ https://github.com/user-attachments/assets/a9821c52-125c-4bfe-b5fa-6a4b9ebd5173
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/your-repo.gi
+   git clone https://github.com/kerolosLabeeb22/news_app.git
    ```
 2. **Open the Project**
 Open the project using **Android Studio** or any IDE that supports Kotlin and Android development.
